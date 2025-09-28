@@ -34,7 +34,7 @@ public class InputFileRepositoryTest {
         assertEquals(1, advs.size());
         assertEquals("Indy", advs.get(0).getName());
 
-        // Clean up
+        // nettoyage
         java.nio.file.Files.deleteIfExists(java.nio.file.Paths.get(path));
     }
 }

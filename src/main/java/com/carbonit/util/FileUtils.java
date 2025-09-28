@@ -1,14 +1,22 @@
 package com.carbonit.util;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
- * Utility class for common file operations.
+ * Classe utilitaire pour les opérations courantes sur les fichiers.
+ * Permet de lire et d'écrire facilement le contenu d'un fichier texte.
  */
 public class FileUtils {
 
     /**
-     * Reads the entire content of a file as a String.
+     * Lit tout le contenu d'un fichier et le retourne sous forme de String.
+     * @param path Chemin du fichier à lire
+     * @return Contenu du fichier sous forme de chaîne de caractères
+     * @throws IOException En cas d'erreur de lecture
      */
     public static String readFile(String path) throws IOException {
         StringBuilder sb = new StringBuilder();
@@ -22,7 +30,10 @@ public class FileUtils {
     }
 
     /**
-     * Writes the given content to a file.
+     * Écrit le contenu donné dans un fichier.
+     * @param path Chemin du fichier à écrire
+     * @param content Contenu à écrire dans le fichier
+     * @throws IOException En cas d'erreur d'écriture
      */
     public static void writeFile(String path, String content) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {

@@ -1,7 +1,8 @@
 package com.carbonit.model;
 
 /**
- * Represents a treasure on the map.
+ * Représente un trésor sur la carte.
+ * Gère le nombre de trésors restants sur une case.
  */
 public class Treasure {
     private final Position position;
@@ -21,8 +22,8 @@ public class Treasure {
     }
 
     /**
-     * Collects a treasure if available.
-     * @return true if a treasure was collected, false otherwise.
+     * Ramasse un trésor si disponible.
+     * @return true si un trésor a été ramassé, false sinon
      */
     public boolean collect() {
         if (count > 0) {

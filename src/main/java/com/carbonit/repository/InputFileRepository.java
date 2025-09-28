@@ -11,7 +11,7 @@ import com.carbonit.model.Orientation;
 import com.carbonit.model.Position;
 
 /**
- * Reads the input file and builds the map and adventurers.
+ * Lit le fichier d'entrée et construit la carte et les aventuriers.
  */
 public class InputFileRepository {
 
@@ -19,7 +19,10 @@ public class InputFileRepository {
         public com.carbonit.model.Map map;
         public List<Adventurer> adventurers;
     }
-
+    /**
+     * Lit le fichier d'entrée et retourne les données du jeu.
+     * Ignore les lignes commençant par '#'.
+     */
     public MapData read(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
@@ -27,7 +30,7 @@ public class InputFileRepository {
         List<Adventurer> adventurers = new ArrayList<>();
         while ((line = reader.readLine()) != null) {
             line = line.trim();
-            if (line.isEmpty() || line.startsWith("#")) continue; // <-- Ignore comments and empty lines
+            if (line.isEmpty() || line.startsWith("#")) continue; // Ignore les commentaires et lignes vides
             String[] parts = line.split(" - ");
             switch (parts[0]) {
                 case "C":

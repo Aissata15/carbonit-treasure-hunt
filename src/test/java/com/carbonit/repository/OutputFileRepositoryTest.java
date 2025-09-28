@@ -32,7 +32,7 @@ public class OutputFileRepositoryTest {
         assertTrue(content.contains("T - 0 - 1 - 1"));
         assertTrue(content.contains("A - Indy - 0 - 0 - N - 1"));
 
-        // Clean up
+        // nettoyage
         Files.deleteIfExists(Paths.get(path));
     }
 }
