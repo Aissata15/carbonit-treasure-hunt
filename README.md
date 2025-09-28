@@ -21,7 +21,7 @@ Ce projet simule une chasse au trésor sur une carte, avec des aventuriers, des 
    ```shell
    docker-compose up
    ```
-5. **Le résultat sera écrit dans `output.txt` à la racine du projet, pour voir le résultat directement dans le terminal, taper dnas le shell:**
+5. **Le résultat sera écrit dans `output.txt` à la racine du projet, pour voir le résultat directement dans le terminal, taper dans le shell:**
  ```shell
    type .\output.txt
  ```
@@ -175,10 +175,8 @@ A - Indy - 3 - 3 - N - AAAA
 
 ---
 
-## Auteur
+## Autrice
 
-Assignment CarbonIT
+Aïssata Sidibé
 
 ---
-
-Pour toute question ou amélioration, contactez le responsable du projet.
