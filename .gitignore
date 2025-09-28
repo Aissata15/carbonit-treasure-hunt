@@ -1,0 +1,5 @@
+/openJdk-24/
+/target/
+*.class
+*.log
+*.jar
