@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  treasure-hunt:
+    build: .
+    container_name: treasure-hunt
+    volumes:
+      - ./input.txt:/app/input.txt
+      - ./output.txt:/app/output.txt

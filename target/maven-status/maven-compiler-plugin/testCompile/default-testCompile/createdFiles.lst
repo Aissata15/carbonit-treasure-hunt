@@ -1,0 +1,7 @@
+com\carbonit\model\AdventurerTest.class
+com\carbonit\repository\OutputFileRepositoryTest.class
+com\carbonit\util\FileUtilsTest.class
+com\carbonit\service\AdventureServiceTest.class
+com\carbonit\model\TreasureTest.class
+com\carbonit\repository\InputFileRepositoryTest.class
+com\carbonit\model\PositionTest.class
